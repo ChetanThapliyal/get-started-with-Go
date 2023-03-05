@@ -2,7 +2,7 @@ package main
 import "fmt"
 
 func main() {
-	//different types of variables
+	//datatTypes in GO
 
 	//int
 	var a int = 10
