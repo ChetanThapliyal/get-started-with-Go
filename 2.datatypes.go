@@ -1,68 +1,72 @@
 package main
+
 import "fmt"
 
 func main() {
-	//datatTypes in GO
+	// bool
+	var flag bool = true
+	var zeroFlag bool
+	fmt.Printf("bool: %v, zero value: %v\n", flag, zeroFlag)
 
-	//int
-	var a int = 10
-	var n int
-	fmt.Println("Integers:")
-	fmt.Println("int:", a)
-	//zero value of datatype
-	fmt.Println("Zero value of integer is:", n)
-	
-	//float
-	var b float64 = 10.55
-	var o float64
-	fmt.Println("\n Float:")
-	fmt.Println("float64:", b)
-	//zero value of datatype
-	fmt.Println("Zero value of float is:", o)
+	// numeric types
+	var i8 int8 = -128
+	var i16 int16 = -32768
+	var i32 int32 = -2147483648
+	var i64 int64 = -9223372036854775808
+	var u8 uint8 = 255
+	var u16 uint16 = 65535
+	var u32 uint32 = 4294967295
+	var u64 uint64 = 18446744073709551615
+	var f32 float32 = 3.14
+	var f64 float64 = 3.141592653589793
+	var c64 complex64 = 1 + 2i
+	var c128 complex128 = 3 + 4i
 
-	//Boolean
-	var c bool = true
-	var p bool
-	fmt.Println("\n Boolean:")
-	fmt.Println("boolean:", c)
-	//zero value of datatype
-	fmt.Println("Zero value of boolean is:", p)
+	fmt.Printf("int8: %v\n", i8)
+	fmt.Printf("int16: %v\n", i16)
+	fmt.Printf("int32: %v\n", i32)
+	fmt.Printf("int64: %v\n", i64)
+	fmt.Printf("uint8: %v\n", u8)
+	fmt.Printf("uint16: %v\n", u16)
+	fmt.Printf("uint32: %v\n", u32)
+	fmt.Printf("uint64: %v\n", u64)
+	fmt.Printf("float32: %v\n", f32)
+	fmt.Printf("float64: %v\n", f64)
+	fmt.Printf("complex64: %v\n", c64)
+	fmt.Printf("complex128: %v\n", c128)
 
-	//String
-	var d string = "Oh My God"
-	var q string
-	fmt.Println("\n String:")
-	fmt.Println("string:", d)
-	//zero value of datatype
-	fmt.Println("Zero value of string is:", q)
+	// string
+	var str string = "Hello, World!"
+	var emptyStr string
+	fmt.Printf("string: %v, zero value: %v\n", str, emptyStr)
 
-	//Array
-	var e [3]int = [3]int {1,2,3}
-	var r []int
-	fmt.Println("\n Array:")
-	fmt.Println("array:", e)
-	//zero value of datatype
-	fmt.Println("Zero value of array is:", r)
+	// arrays
+	var arr [3]int = [3]int{1, 2, 3}
+	var zeroArr [3]int
+	fmt.Printf("array: %v, zero value: %v\n", arr, zeroArr)
 
-	//Slice
-	var f []int = []int {1,2,3}
-	var s []int
-	fmt.Println("\n Slice:")
-	fmt.Println("slice:", f)
-	//zero value of datatype
-	fmt.Println("Zero value of slice is:", s)
+	// slices
+	var slice []int = []int{1, 2, 3}
+	var emptySlice []int
+	fmt.Printf("slice: %v, zero value: %v\n", slice, emptySlice)
 
-	//Map
-	g := make(map[int]string)
-	g[1] = "Ram"
-	g[2] = "Laxman"
-	g[3] = "Bharat"
-	g[4] = "Shatrughan"
-	var t map[int]string
-	fmt.Println("\n Map:")
-	fmt.Println("map:", g)
-	//zero value of datatype
-	fmt.Println("Zero value of map is:", t)
+	// maps
+	var m map[string]int = map[string]int{"one": 1, "two": 2, "three": 3}
+	var emptyMap map[string]int
+	fmt.Printf("map: %v, zero value: %v\n", m, emptyMap)
 
+	// pointers
+	var ptr *int = &i32
+	var nilPtr *int
+	fmt.Printf("pointer: %v, zero value: %v\n", ptr, nilPtr)
 
+	// structs
+	type person struct {
+		name string
+		age  int
+	}
+	var p person = person{"John", 30}
+	var emptyPerson person
+	fmt.Printf("struct: %v, zero value: %v\n", p, emptyPerson)
 }
+
