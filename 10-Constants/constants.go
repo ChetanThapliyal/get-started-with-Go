@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	/*----------------
@@ -34,11 +36,15 @@ func main() {
 	var g int = typedConst / 3   // valid arithmetic operation
 	var h int = untypedConst / 3 // valid arithmetic operation
 
-	var i float64 = typedConst / 3   // invalid arithmetic operation, different types
+	// var i float64 = typedConst / 3   // invalid arithmetic operation, different types
 	var j float64 = untypedConst / 3 // valid arithmetic operation, inferred as float64
 
 	var k bool = typedConst == 10   // valid comparison, same types
 	var l bool = untypedConst == 10 // valid comparison, inferred as int
 
+	fmt.Println(g)
+	fmt.Println(h)
+	fmt.Println(j)
+	fmt.Println(k)
+	fmt.Println(l)
 }
-
