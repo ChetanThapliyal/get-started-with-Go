@@ -29,7 +29,7 @@ In almost every Go file you work with:
 2. Any import statements
 3. The actual code
 
-### Package
+## Package
 A package is a collection of source files in the same directory that are compiled together. Functions, types, variables, and constants defined in one source file are visible to all other source files within the same package.
 
 - The package clause gives the name of the package that this file’s code will become a part of.
