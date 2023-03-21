@@ -14,12 +14,12 @@ func main() {
     var y float64
     var z string
 
-		// fmt.Printf function along with the %T format specifier
+	// fmt.Printf function along with the %T format specifier
     fmt.Printf("x is of type %T\n", x)
     fmt.Printf("y is of type %T\n", y)
     fmt.Printf("z is of type %T\n", z)
 
-		// using reflect package
+	// using reflect package
     fmt.Println(reflect.TypeOf(x))
     fmt.Println(reflect.TypeOf(y))
     fmt.Println(reflect.TypeOf(z))
