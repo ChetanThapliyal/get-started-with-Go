@@ -21,15 +21,19 @@ A slice does not store any data, it just describes a section of an underlying ar
 
 Here the length of the slice is 4, which means that there are 4 elements accessible through the slice. The capacity of the slice is 5, which means that the underlying array can hold up to 5 elements without reallocating memory.
 
-```bash
-	  +-----+-----+-----+-----+-----+-----+-----+----+
+```
+	+-----+-----+-----+-----+-----+-----+-----+----+
       |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |
       +-----+-----+-----+-----+-----+-----+-----+-----+
          ^                          ^                 ^
          |                          |                 |
       Pointer                    Length(4)        Capacity(8)
 
-In this diagram, the pointer points to the first element of the underlying array. The length of the slice is 4, which means that there are 4 elements accessible through the slice. The capacity of the slice is 8, which means that the underlying array can hold up to 8 elements without reallocating memory.
+In this diagram, the pointer points to the first element of the
+underlying array. The length of the slice is 4, which means that there
+are 4 elements accessible through the slice. The capacity of the slice
+is 8, which means that the underlying array can hold up to 8 elements
+without reallocating memory.
 ```
 
 ### 1. Creating a Slice
