@@ -1,13 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 
 	//--------------------------------------------
 	// Method 1: Using type conversion functions |
 	//--------------------------------------------
-	
+
 	// Convert an int to a float64
 	x := 10         //var x int =10
 	y := float64(x) //var y float64 = float64(x)
@@ -51,4 +54,3 @@ func main() {
 	binaryStr := strconv.FormatInt(int64(numInt), 2)
 	fmt.Printf("Integer %d formatted to binary string %s\n", numInt, binaryStr)
 }
-
