@@ -52,3 +52,5 @@ ElapsedTime(3, 20)
 // => 26
 ```
 
+**[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/01-Basics/Gophers-Gorgeous-Lasagna.go)**
+
