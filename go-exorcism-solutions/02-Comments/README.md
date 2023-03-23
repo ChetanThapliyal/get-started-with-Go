@@ -14,4 +14,4 @@ The president of Goblinocus is a bit paranoid and fears uncommented variables ar
 
 Goblinocus forecast operators want to know what the Forecast() function does (but do not tell them how it works, since unfortunately, they will get more confused). Please write a comment for this function that describes what the function does, but not how it does it.
 
-**[Solution]()**
+**[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/02-Comments/Weather%20Forecast.go)**
