@@ -5,7 +5,7 @@ This repository contains Go programs starting from basics to advanced, including
 ## Getting Started
 To get started with this repository, you will need to have Go installed on your computer. 
 1. You can download and install Go from the official website https://golang.org/dl/.
-2. Run the installer and follow the instructions.
+2. Run the installer and follow the [instructions](https://go.dev/doc/install).
 3. Verify that Go is installed correctly by opening a terminal window and running the command `go version`. This should print the installed Go version.
 
 > Official Go repo : https://github.com/golang/go
