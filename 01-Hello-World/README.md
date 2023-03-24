@@ -2,25 +2,6 @@
 
 Go programs are organized into packages. Every Go file starts with a package clause.
 
-To run the program:
-
-```bash
-#To run the program, put the code in hello-world.go and use go run.
-go run hello-world.go
-hello world
-
-##Sometimes we’ll want to build our programs into binaries. 
-##We can do this using go build.
-go build hello-world.go
-
-ls
-hello-world    hello-world.go	
-
-## We can then execute the built binary directly.
-./hello-world
-hello world
-```
-
 ## Typical GO Layout
 
 In almost every Go file you work with:
@@ -55,3 +36,24 @@ Go files almost always have one or more import statements. An import path is a
 **Function**: The last part of every Go file is the actual code, which is often split up into one or more functions. A function is a group of one or more lines of code that you can call (run) from other places in your program. 
 
 - When a Go program is executed, it looks for a function named main and runs that first, which is why we named this function main. (acts as an entry point for the compiler.)
+
+---
+
+To run the program:
+
+```bash
+#To run the program, put the code in hello-world.go and use go run.
+go run hello-world.go
+hello world
+
+##Sometimes we’ll want to build our programs into binaries. 
+##We can do this using go build.
+go build hello-world.go
+
+ls
+hello-world    hello-world.go	
+
+## We can then execute the built binary directly.
+./hello-world
+hello world
+```

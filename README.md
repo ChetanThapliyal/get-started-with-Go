@@ -1,6 +1,6 @@
 # Go Programming Language
 
-This repository contains Go programs starting from basics to advanced, including topics like variables, control structures, functions, arrays and slices, pointers, structures, methods, and interfaces. The repository also includes solutions for problems from Leetcode and Exercism.
+This repository is designed for anyone who is interested in learning GoLang. I have structured this repository to cover the basics of GoLang. It contains Go programs starting from basics to advanced, including topics like variables, control structures, functions, arrays and slices, pointers, structures, methods, and interfaces. The repository also includes solutions for problems from Leetcode and Exercism Go Track.
 
 ## Getting Started
 To get started with this repository, you will need to have Go installed on your computer. 
