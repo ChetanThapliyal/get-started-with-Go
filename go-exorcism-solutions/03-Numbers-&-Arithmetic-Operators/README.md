@@ -42,4 +42,4 @@ CalculateCost(21)
 
 > Note: the return value should be an uint.
 
-**[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/03-Numbers/CarsAssemble.go)**
+**[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/03-Numbers-%26-Arithmetic-Operators/CarsAssemble.go)**
