@@ -36,7 +36,7 @@ This repository contains the following topics:
 > [Structs]()</br>
 > [Methods]()</br>
 > [Interfaces]()</br>
-> [Exorcism Go Track](https://github.com/che01tan/get-started-with-Go/tree/main/go-exorcism-solutions)</br>
+> [Exercism Go Track](https://github.com/che01tan/get-started-with-Go/tree/main/go-exorcism-solutions)</br>
 
 Each topic has its own folder containing a README.md file with an explanation of the topic and some examples. You can follow along with the examples and try them out for yourself.
 
