@@ -52,8 +52,8 @@ Some of the benefits of Go include its simplicity, speed, and scalability. The l
 
 | Static Type Languages | Dynamic Type Languages |
 | --- | --- |
-| 1. Static typed languages require that the data type of a variable be declared explicitly at the time of its declaration. The type of a variable is then checked at compile time, and any type mismatch will result in a compile-time error. This means that any errors related to type mismatches are caught before the program is run, making it easier to find and fix bugs. | 1. Dynamic typed languages do not require explicit type declaration. Instead, the type of a variable is determined at runtime, and the same variable can hold values of different types at different times. This means that type mismatches can only be detected at runtime, and the program might produce unexpected results or errors. |
-| 2. Code written in a statically typed language is usually more concise. | 2. Code written in a dynamically typed language is usually more verbose. |
-| 3. Statically typed languages tend to be faster and more efficient than dynamically typed languages. | 3. Dynamically typed languages can be more flexible and expressive than statically typed languages. |
+| 1. Requires the data type of a variable to be declared explicitly at the time of its declaration. The type of a variable is then checked at compile time, and any type mismatch will result in a compile-time error. This means that any errors related to type mismatches are caught before the program is run, making it easier to find and fix bugs. | 1. Do not require to explicit declaration. Instead, the type of a variable is determined at runtime, and the same variable can hold values of different types at different times. This means that type mismatches can only be detected at runtime, and the program might produce unexpected results or errors. |
+| 2. Concise Code. | 2. Usually more Verbose. |
+| 3. Faster and more efficient. | 3. More Flexible and Expressive. |
 | 4. Examples: Java, C++, and Go. | 4. Examples: Python, JavaScript, and Ruby. |
 ---
