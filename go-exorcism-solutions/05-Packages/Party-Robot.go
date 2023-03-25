@@ -15,7 +15,7 @@ func HappyBirthday(name string, age int) string {
 
 // AssignTable assigns a table to each guest.
 func AssignTable(name string, table int, neighbor, direction string, distance float64) string {
-    welcome := Welcome(name)
+	welcome := Welcome(name)
 	tbl := fmt.Sprintf("\nYou have been assigned to table %03d. Your table is %s, exactly %.1f meters from here.\n", table, direction, distance)
 	nextTo := fmt.Sprintf("You will be sitting next to %s.", neighbor)
 	finalMsg := welcome + tbl + nextTo
