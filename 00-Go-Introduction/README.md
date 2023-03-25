@@ -4,6 +4,16 @@ Go, or Golang, is an open source programming language developed by Google in 200
 
 Go is also known for its scalability and fast compile times, making it a great language for large scale projects. It is used in a variety of industries, such as web development, cloud computing, and data science. Go has a thriving open source community, with many libraries and frameworks available to make development faster and easier.
 
+>Some Awesom Go Open Source Projects are:</br>
+    Kubernetes</br>
+    CoreDNS</br>
+    Monzo Bank</br>
+    CockroachDB</br>
+    Docker</br>
+    Hugo
+
+You can find the whole list of Projects here : [Projects](https://github.com/golang/go/wiki/Projects)
+
 ## Key GO Features
 
 - A **compiled** language (Fast compilation)
