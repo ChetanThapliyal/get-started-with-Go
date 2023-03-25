@@ -35,7 +35,6 @@ Some of the benefits of Go include its simplicity, speed, and scalability. The l
 > - **Statically Typed** : A statically typed language is a programming language where variables are explicitly declared before the program is executed. This means that the type of data that a variable can contain is determined at compile-time, and can not change during the program's execution. This provides a level of clarity and structure to the code, but also restricts the flexibility of the language in certain ways.
 
 ## Go Compared to Python and C++
----
 
 | Go | Python | C++ |
 | --- | --- | --- |
