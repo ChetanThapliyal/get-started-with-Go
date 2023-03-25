@@ -39,4 +39,4 @@ AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298)
 // You will be sitting next to Frank.
 ```
 
-[Solution]()
+[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/05-Packages/Party-Robot.go)
