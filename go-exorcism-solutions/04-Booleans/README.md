@@ -56,4 +56,4 @@ var petDogIsPresent = false
 fmt.Println(CanFreePrisoner(knightIsAwake, archerIsAwake, prisonerIsAwake, petDogIsPresent))
 // Output: false
 ```
-**[Solution]()**
+**[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/04-Booleans/Annalyns-Infiltration.go)**
