@@ -16,6 +16,7 @@ You can also try the code directly at [Go Playground](https://go.dev/play/) with
 
 This repository contains the following topics:
 
+> [Go Introduction](https://github.com/che01tan/get-started-with-Go/tree/main/00-Go-Introduction)
 > [Hello World](https://github.com/che01tan/get-started-with-Go/tree/main/01-Hello-World)</br>
 > [Variable Declaration](https://github.com/che01tan/get-started-with-Go/tree/main/02-Variable-Declaration)</br>
 > [Printing Variables](https://github.com/che01tan/get-started-with-Go/tree/main/03-Printing-Variables)</br>
