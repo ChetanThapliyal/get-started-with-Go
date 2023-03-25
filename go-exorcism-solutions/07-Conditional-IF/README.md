@@ -49,4 +49,4 @@ CalculateResellPrice(1000, 15)
 
 > Note the return value is a float64.
 
-[Solution]()
+[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/07-Conditional-IF/Vehicle-Purchase%20.go)
