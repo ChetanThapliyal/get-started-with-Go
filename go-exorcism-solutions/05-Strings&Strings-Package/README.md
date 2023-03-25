@@ -50,4 +50,4 @@ CleanUpMessage(message)
 // => BUY NOW, SAVE 10%
 ```
 
-[Solution]()
+[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/05-Strings%26Strings-Package/Welcome-To-Tech-Palace.go)
