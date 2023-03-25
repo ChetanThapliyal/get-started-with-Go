@@ -29,7 +29,7 @@ Go's standard library provides a wide range of functionality, including HTTP sup
 
 Some of the benefits of Go include its simplicity, speed, and scalability. The language is easy to learn, even for developers new to programming. Go's built-in concurrency support makes it easy to write concurrent and parallel code, which can improve the performance of your applications.
 
-> ### 📌 Concepts
+## 📌 Some Basic Concepts
 > - **Concurrency** : A program is concurrent when tasks **can** be executed out-of-order or in a partial order. Concurrency in programming language is the ability of a program to run multiple tasks simultaneously. This is achieved by splitting tasks into sub-tasks that can be executed independently, allowing them to be processed in parallel rather than sequentially.
 > - **Garbage collector** (often called GC): When we build programs, we need to store data and fetch data from memory. Memory is not an infinite resource. GC is a process in programming where unused elements stored in memory are destroyed from time to time. Putting some data into memory is called allocation; the inverse action, which consists of removing data from memory, is called deallocation. The garbage collector’s role is to deallocate memory when it is not used anymore.
 > - **Statically Typed** : A statically typed language is a programming language where variables are explicitly declared before the program is executed. This means that the type of data that a variable can contain is determined at compile-time, and can not change during the program's execution. This provides a level of clarity and structure to the code, but also restricts the flexibility of the language in certain ways.
