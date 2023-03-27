@@ -352,3 +352,37 @@ func main() {
 	fmt.Println(spanishGreeting("Bob"))   // Output: Hola, Bob!
 }
 ```
+
+## Defer Statements
+A `defer` statement is used to schedule a function call to be executed after the function that contains it completes. It is used to ensure that resources are released or functions are executed at the end of a function, regardless of how the function exits.
+
+The `defer` statement is often used to pair an opening function call with a corresponding closing function call. For example, if a function opens a file, the `defer` statement can be used to ensure that the file is closed when the function returns, even if an error occurs.
+
+Here's an example of how `defer` is used in Go:
+
+```go
+func main() {
+    defer fmt.Println("world")
+    fmt.Println("hello")
+}
+```
+
+In this example, the `fmt.Println("world")` statement is scheduled to be executed after the `fmt.Println("hello")` statement completes. When the program is run, it will output:
+
+```go
+hello
+world
+```
+
+Another example could be a function that locks a mutex, and the corresponding `defer` statement that unlocks the mutex:
+
+```go
+func myFunc(mu *sync.Mutex) {
+    mu.Lock()
+    defer mu.Unlock()
+    
+    // rest of the function logic
+}
+```
+
+In this example, the `mu.Lock()` statement locks the mutex, and the `defer mu.Unlock()` statement is scheduled to be executed after the function completes, ensuring that the mutex is always unlocked, even if an error occurs in the function.
