@@ -85,4 +85,4 @@ cards := RemoveItem([]int{3, 2, 6, 4, 8}, 11)
 fmt.Println(cards)
 // Output: [3 2 6 4 8]
 ```
-[Solution]()
+[Solution](https://github.com/che01tan/get-started-with-Go/blob/main/go-exorcism-solutions/08-Slices/Card-Tricks.go)
