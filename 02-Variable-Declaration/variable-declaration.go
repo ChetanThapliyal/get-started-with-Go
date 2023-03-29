@@ -16,7 +16,9 @@ func main() {
 		company string = "Google"
 		salary  int    = 26000
 	)
-	
 
+	fmt.Println(company)
+	fmt.Println(salary)
+	fmt.Println(age)
+	fmt.Println(name)
 }
-
