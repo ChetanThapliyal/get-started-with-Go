@@ -41,10 +41,6 @@ This repository contains the following topics:
 
 Each topic has its own folder containing a README.md file with an explanation of the topic and some examples. You can follow along with the examples and try them out for yourself.
 
-### Leetcode Problems
-The Leetcode folder contains solutions to some Leetcode problems in Go. Each problem has its own folder containing a README.md file with the problem description and solution.
-
-> Visit: https://leetcode.com/problemset/all/
 
 ### Exercism Problems
 The Exercism folder contains solutions to some Exercism problems in Go. Each problem has its own folder containing a README.md file with the problem description and solution.
