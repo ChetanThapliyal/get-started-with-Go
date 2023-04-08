@@ -1,6 +1,6 @@
 # GO Fundamentals
 
-Go programs are organized into packages. Every Go file starts with a package clause.
+Go programs are organized into packages. Every Go file starts with a package clause. In a package, there are one or more source files, called `.go` files, that define what the package does.
 
 ## Typical GO Layout
 
