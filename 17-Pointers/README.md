@@ -110,3 +110,5 @@ In the above example, we pass the memory address of `x` to the `increment` funct
 When we call `increment(&x)`, the `increment` function modifies the value at the memory address held by `a`, which is the same memory address held by `x`. Therefore, the value of `x` is also incremented to `11`.
 
 > Note that using pointers in Go can be useful for passing large data structures or modifying function arguments in place. However, it also requires careful handling to avoid errors such as nil pointers or memory leaks.
+
+**Slices and Maps are passed by reference, by default.**
