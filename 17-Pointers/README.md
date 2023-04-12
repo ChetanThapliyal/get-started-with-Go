@@ -65,3 +65,48 @@ func main() {
 ```
 
 > ⭐ Note that when using pointers in Go, it's important to handle **nil pointers** properly to avoid runtime errors.
+
+## Passing by Value in Functions
+
+In Go, all function arguments are passed by value, meaning a copy of the argument is passed to the function. However, when the argument is a pointer, a copy of the memory address is passed, allowing the function to modify the original variable.
+
+> - Function is called by directly passing the value of the variable as an argument. The parameter is copied into another location of your memory.
+> - So, when accessing or modifying the variable within your function, only the copy is accessed or modified, and the original value is never modified.
+
+Here's an example of passing by value:
+
+```go
+func main() {
+    x := 10
+    increment(x)
+    fmt.Println(x) // prints: 10
+}
+
+func increment(a int) {
+    a++
+}
+```
+
+In the above example, the `increment` function takes an argument `a` of type `int`. When we call `increment(x)`, a copy of `x` is passed to the function. The `increment` function increments the value of `a`, but this has no effect on the original variable `x` because it's a copy.
+
+## Passing by Reference in Functions
+
+Here's an example of passing by reference using a pointer:
+
+```go
+func main() {
+    x := 10
+    increment(&x)
+    fmt.Println(x) // prints: 11
+}
+
+func increment(a *int) {
+    (*a)++
+}
+```
+
+In the above example, we pass the memory address of `x` to the `increment` function using the `&` operator. The `increment` function takes a pointer argument `a` of type `*int`. To access the value at the memory address held by `a`, we use the `*` operator, which dereferences the pointer.
+
+When we call `increment(&x)`, the `increment` function modifies the value at the memory address held by `a`, which is the same memory address held by `x`. Therefore, the value of `x` is also incremented to `11`.
+
+> Note that using pointers in Go can be useful for passing large data structures or modifying function arguments in place. However, it also requires careful handling to avoid errors such as nil pointers or memory leaks.

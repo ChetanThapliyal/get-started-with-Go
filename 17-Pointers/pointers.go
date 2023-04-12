@@ -1,4 +1,3 @@
-```go
 package main
 
 import "fmt"
@@ -34,5 +33,3 @@ func main() {
 	*ptr = 20
 	fmt.Println("Updated value of x =", x)
 }
-
-```
