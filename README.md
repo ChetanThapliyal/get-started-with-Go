@@ -33,10 +33,10 @@ This repository contains the following topics:
 > [Slices](https://github.com/che01tan/get-started-with-Go/tree/main/14-Slices)</br>
 > [Maps](https://github.com/che01tan/get-started-with-Go/tree/main/15-Maps)</br>
 > [Functions](https://github.com/che01tan/get-started-with-Go/tree/main/16-Functions)</br>
-> [Pointers]()</br>
-> [Structs]()</br>
-> [Methods]()</br>
-> [Interfaces]()</br>
+> [Pointers](https://github.com/che01tan/get-started-with-Go/tree/main/17-Pointers)</br>
+> [Structs](https://github.com/che01tan/get-started-with-Go/tree/main/18-Struct%2C%20Methods%20and%20Interfaces)</br>
+> [Methods](https://github.com/che01tan/get-started-with-Go/tree/main/18-Struct%2C%20Methods%20and%20Interfaces)</br>
+> [Interfaces](https://github.com/che01tan/get-started-with-Go/tree/main/18-Struct%2C%20Methods%20and%20Interfaces)</br>
 > [Exercism Go Track](https://github.com/che01tan/get-started-with-Go/tree/main/go-exorcism-solutions)</br>
 
 Each topic has its own folder containing a README.md file with an explanation of the topic and some examples. You can follow along with the examples and try them out for yourself.
