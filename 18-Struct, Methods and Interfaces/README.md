@@ -251,3 +251,141 @@ fmt.Println(person1 == employee1) // Compile error: cannot compare Person and Em
 In this example, we define two struct types, `Person` and `Employee`, with the same fields and types. We create a `Person` instance called `person1` and an `Employee` instance called `employee1` with the same field values.
 
 When we try to compare `person1` and `employee1` for equality using the `==` operator, we get a compile error because the two struct types are different and cannot be compared.
+
+---
+
+# Methods
+
+A method is a function that is associated with a specific type of struct. It can be defined using the `func` keyword, the name of the method, the name of the struct type (with the `receiver` keyword), and any parameters and return types.
+
+Whenever there's a strong relationship between a function and a struct, it makes sense to use a method.
+
+Syntax :  **`func (<receiver>) <method_name>(<parameters>)<return_param> { //code}`**
+
+Here's an example of a method definition in Go:
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+// A method associated with the Person struct
+func (p Person) SayHello() {
+    fmt.Printf("Hello, my name is %s and I am %d years old\n", p.Name, p.Age)
+}
+
+func main() {
+    // Creating a new Person instance
+    person := Person{Name: "Alice", Age: 30}
+
+    // Calling the SayHello method on the Person instance
+    person.SayHello() //Output: Hello, my name is Alice and I am 30 years old
+}
+```
+
+In this example, we define a `Person` struct with two fields, `Name` and `Age`. We also define a method `SayHello` associated with the `Person` struct.
+
+The `SayHello` method has a `receiver` of type `Person`, which means that it is associated with the `Person` struct. The `receiver` is passed as the first argument to the method and is accessed using the `p` variable.
+
+Inside the `SayHello` method, we use the `fmt.Printf` function to print a message that includes the `Name` and `Age` fields of the `Person` instance.
+
+In the `main` function, we create a new `Person` instance called `person` and initialize its fields. We then call the `SayHello` method on the `person` instance using the `.` operator.
+
+This example demonstrates how to define a method associated with a struct type, and how to call the method on an instance of the struct using the `.` operator.
+
+It's important to note that methods can also be defined with pointers to the struct as the receiver. This allows the method to modify the struct's fields. Here's an example:
+
+```go
+// A method associated with the Person struct using a pointer receiver
+func (p *Person) SetAge(age int) {
+    p.Age = age
+}
+```
+
+This method takes a pointer to the `Person` struct as its receiver (`*Person`), which allows it to modify the `Age` field of the struct.
+
+## Method Sets
+
+A method set is the set of methods that can be called on a specific type of struct.
+
+There are two types of method sets in Go:
+
+1. Value receiver method set
+2. Pointer receiver method set
+
+The value receiver method set contains all of the methods that are associated with a struct using a value receiver. These methods can be called on an instance of the struct or a pointer to the struct.
+
+The pointer receiver method set contains all of the methods that are associated with a struct using a pointer receiver. These methods can only be called on a pointer to the struct.
+
+Here's an example that demonstrates how method sets work:
+
+```go
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+// A value receiver method associated with the Person struct
+func (p Person) SayHello() {
+    fmt.Printf("Hello, my name is %s and I am %d years old\n", p.Name, p.Age)
+}
+
+// A pointer receiver method associated with the Person struct
+func (p *Person) SetAge(age int) {
+    p.Age = age
+}
+
+func main() {
+    // Creating a new Person instance
+    person := Person{Name: "Alice", Age: 30}
+
+    // Calling the SayHello method on the Person instance
+    person.SayHello()
+
+    // Calling the SetAge method on the Person instance using a pointer
+    (&person).SetAge(35)
+
+    // Calling the SayHello method on the Person instance again
+    person.SayHello()
+
+    // Creating a pointer to the Person instance
+    pointer := &person
+
+    // Calling the SetAge method on the pointer to the Person instance
+    pointer.SetAge(40)
+
+    // Calling the SayHello method on the Person instance again
+    person.SayHello()
+}
+```
+
+In this example, we define a `Person` struct with two fields, `Name` and `Age`. We also define two methods, `SayHello` and `SetAge`, associated with the `Person` struct.
+
+The `SayHello` method is associated with the `Person` struct using a value receiver. This means that it can be called on an instance of the `Person` struct or a pointer to the struct.
+
+The `SetAge` method is associated with the `Person` struct using a pointer receiver. This means that it can only be called on a pointer to the `Person` struct.
+
+In the `main` function, we create a new `Person` instance called `person` and initialize its fields. We then call the `SayHello` method on the `person` instance.
+
+We then call the `SetAge` method on the `person` instance using a pointer. This works because we are calling a method from the value receiver method set on a pointer to the `Person` struct.
+
+We then create a pointer to the `person` instance called `pointer`. We call the `SetAge` method on the `pointer` to the `Person` instance. This works because we are calling a method from the pointer receiver method set on a pointer to the `Person` struct.
+
+Finally, we call the `SayHello` method on the `person` instance again to see the updated value of the `Age` field.
+
+Output:
+
+```go
+Hello, my name is Alice and I am 30 years old
+Hello, my name is Alice and I am 35 years old
+Hello, my name is Alice and I am 40 years old
+```
