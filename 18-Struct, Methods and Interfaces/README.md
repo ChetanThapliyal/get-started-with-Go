@@ -389,3 +389,74 @@ Hello, my name is Alice and I am 30 years old
 Hello, my name is Alice and I am 35 years old
 Hello, my name is Alice and I am 40 years old
 ```
+---
+
+# Interfaces
+
+Interfaces are a set of method signatures that a type must implement in order to satisfy the interface. Interfaces provide a way to specify behavior without specifying the underlying implementation. This makes interfaces a powerful tool for decoupling code and promoting code reuse. 
+
+A type implements an interface by implementing its methods. The go language interfaces are implemented implicitly. And it does not have any specific keyword to implement an interface.
+
+Here's an example that demonstrates how to define and use interfaces in Go:
+
+```go
+package main
+
+import "fmt"
+
+// Define the Shape interface
+type Shape interface {
+    Area() float64
+}
+
+// Define the Circle struct
+type Circle struct {
+    x, y, r float64
+}
+
+// Define the Area method on the Circle struct
+func (c Circle) Area() float64 {
+    return 3.14 * c.r * c.r
+}
+
+// Define the Rectangle struct
+type Rectangle struct {
+    width, height float64
+}
+
+// Define the Area method on the Rectangle struct
+func (r Rectangle) Area() float64 {
+    return r.width * r.height
+}
+
+func main() {
+    // Create a Circle instance
+    circle := Circle{x: 0, y: 0, r: 5}
+
+    // Create a Rectangle instance
+    rectangle := Rectangle{width: 10, height: 5}
+
+    // Define a slice of Shape interfaces and add Circle and Rectangle instances to it
+    shapes := []Shape{circle, rectangle}
+
+    // Loop through the shapes slice and call the Area method on each instance
+    for _, shape := range shapes {
+        fmt.Printf("Area of shape: %.2f\n", shape.Area())
+    }
+}
+```
+
+In this example, we define an interface called `Shape` with a single method signature called `Area`, which returns a float64. We then define two structs, `Circle` and `Rectangle`, and implement the `Area` method on each struct.
+
+In the `main` function, we create a `Circle` instance and a `Rectangle` instance. We then define a slice of `Shape` interfaces and add the `Circle` and `Rectangle` instances to it. This works because both `Circle` and `Rectangle` implement the `Area` method defined by the `Shape` interface.
+
+We then loop through the `shapes` slice and call the `Area` method on each instance. Because both `Circle` and `Rectangle` implement the `Area` method, the correct implementation is called for each instance.
+
+The output of the program will be:
+
+```
+Area of shape: 78.50
+Area of shape: 50.00
+```
+
+This example demonstrates how to define and use interfaces in Go. By defining an interface with a set of method signatures, we can create types that implement the interface and use them interchangeably.
