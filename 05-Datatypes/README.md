@@ -1,12 +1,11 @@
 # Data Types
 
 ## What is Data Type and Why are they needed?
-<p>
+
 * Data type is a classification of data that defines the type of data it is.
 * Data types are used to define the operations that can be performed on the data, the meaning of the data, and the way the data is stored.
 * Common data types include integers, strings, booleans, floats, arrays and slices.
 * Each data type can have different sizes, range of values, and operations that can be performed on it.
-</p>
 
 > ### 📌 What is Memory Allocation?
 > - Memory allocation refers to the process of reserving a portion of memory for storing data. 
