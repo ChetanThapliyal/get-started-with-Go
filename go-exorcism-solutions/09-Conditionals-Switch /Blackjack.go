@@ -27,5 +27,20 @@ func ParseCard(card string) int {
 // FirstTurn returns the decision for the first turn, given two cards of the
 // player and one card of the dealer.
 func FirstTurn(card1, card2, dealerCard string) string {
-	panic("Please implement the FirstTurn function")
+	sum := ParseCard(card1) + ParseCard(card2)
+
+	switch {
+	case card1 == "ace" && card2 == "ace":
+		return "P" // Split pair of aces
+	case sum == 21 && (dealerCard != "ace" && dealerCard != "king" && dealerCard != "queen" && dealerCard != "jack"):
+		return "W" // Automatically win with Blackjack if dealer doesn't have high cards
+	case sum >= 17 && sum <= 20:
+		return "S" // Stand when cards sum up to 17-20
+	case sum >= 12 && sum <= 16 && (ParseCard(dealerCard) >= 7):
+		return "H" // Hit when cards sum up to 12-16 and dealer has 7 or higher
+	case sum <= 11:
+		return "H" // Hit when cards sum up to 11 or lower
+	default:
+		return "S" // Stand for any other scenario
+	}
 }
