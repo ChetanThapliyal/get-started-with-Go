@@ -18,7 +18,10 @@ var cardValues = map[string]int{
 
 // ParseCard returns the integer value of a card following blackjack ruleset.
 func ParseCard(card string) int {
-	panic("Please implement the ParseCard function")
+	if value, exists := cardValues[card]; exists {
+		return value
+	}
+	return 0 // Default value if card is not found
 }
 
 // FirstTurn returns the decision for the first turn, given two cards of the
