@@ -48,7 +48,20 @@ person := struct {
 
 In this example, an anonymous struct is created with `Name` set to "Bob" and `Age` set to 40.
 
-### 3. New keyword:
+### 3. Struct without Fields
+
+You can create an instance of a struct without using the field names, as long as you define the fields in order:
+
+```
+s := Shape {
+	"Oval",
+	20,
+}
+```
+
+
+
+### 4. New keyword:
 
 The `new` keyword is used to allocate memory for all the fields of the new struct and returns a pointer to the newly created struct.
 
@@ -65,7 +78,7 @@ personPtr.Age = 50
 
 In this example, a new `Person` struct is created using `new`, and its fields are set individually using dot notation.
 
-### 4. Zero value:
+### 5. Zero value:
 
 In Go, if you create a struct without initializing any of its fields, they will be set to their zero values. For strings, the zero value is `""`, and for integers, the zero value is `0`.
 
@@ -83,7 +96,7 @@ func main() {
 
 In this example, a new `Person` struct is created with `Name` set to `""` and `Age` set to `0`.
 
-### 5. **`&`** Operator:
+### 6. **`&`** Operator:
 
 You can create a new struct instance using the `&` operator, which returns a pointer to a newly created struct instance. Here's an example:
 
