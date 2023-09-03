@@ -25,3 +25,12 @@ car := NewCar(speed, batteryDrain)
 distance: 0}
 ```
 
+## 2. Create a race track
+Define another struct type called Track with the field distance of type integer. Allow creating a race track by defining a function NewTrack that takes the track's distance in meters as its sole parameter (which is of type int):
+
+```
+distance := 800
+track := NewTrack(distance)
+// => Track{distance: 800}
+```
+
