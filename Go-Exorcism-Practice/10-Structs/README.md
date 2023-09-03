@@ -6,3 +6,22 @@ Cars start with full (100%) batteries. Each time you drive the car using the rem
 If a car's battery is below its battery drain percentage, you can't drive the car anymore.
 
 Each race track has its own distance. Cars are tested by checking if they can finish the track without running out of battery.
+
+## 1. Create a remote controlled car
+Define a Car struct with the following int type fields:
+
+* battery
+* batteryDrain
+* speed
+* distance
+
+Allow creating a remote controlled car by defining a function NewCar that takes the speed of the car in meters, and the battery drain percentage as its two parameters (both of type int) and returns a Car instance:
+
+```
+speed := 5
+batteryDrain := 2
+car := NewCar(speed, batteryDrain)
+// => Car{speed: 5, batteryDrain: 2, battery:100, 
+distance: 0}
+```
+
