@@ -59,7 +59,24 @@ s := Shape {
 }
 ```
 
+However, this syntax is considered brittle code since it can break when a field is added, especially when the new field is of a different type. In the following example we add an extra field to Shape:
 
+```
+type Shape struct {
+	name        string
+	description string // new field 'description' added
+	size        int
+}
+
+s := Shape{
+    "Circle",
+    20,
+}
+// Since the second field of the struct is now a string and not an int,
+// the compiler will throw an error when compiling the program:
+// Output: cannot use 20 (type untyped int) as type string in field value
+// Output: too few values in Shape{...}
+```
 
 ### 4. New keyword:
 
