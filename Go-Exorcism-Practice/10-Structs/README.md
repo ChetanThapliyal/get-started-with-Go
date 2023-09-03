@@ -34,3 +34,14 @@ track := NewTrack(distance)
 // => Track{distance: 800}
 ```
 
+## 3. Drive the car
+Implement the Drive function that updates the number of meters driven based on the car's speed, and reduces the battery according to the battery drainage. If there is not enough battery to drive one more time the car will not move:
+
+```
+speed := 5
+batteryDrain := 2
+car := NewCar(speed, batteryDrain)
+car = Drive(car)
+// => Car{speed: 5, batteryDrain: 2, battery: 98, distance: 5}
+```
+
