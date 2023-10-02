@@ -1,4 +1,4 @@
-# Go Programming Language
+# Learn Go Programming Language
 
 This repository is designed for anyone who is interested in learning GoLang. I have structured this repository to cover the basics of GoLang. It contains Go programs starting from basics to advanced, including topics like variables, control structures, functions, arrays and slices, pointers, structures, methods, and interfaces. The repository also includes solutions for problems from Leetcode and Exercism Go Track.
 
@@ -8,7 +8,7 @@ To get started with this repository, you will need to have Go installed on your 
 2. Run the installer and follow the [instructions](https://go.dev/doc/install).
 3. Verify that Go is installed correctly by opening a terminal window and running the command `go version`. This should print the installed Go version.
 
-> Official Go repo : https://github.com/golang/go
+> Official Go repo: https://github.com/golang/go
 
 You can also try the code directly at [Go Playground](https://go.dev/play/) without installing it.
 
@@ -44,13 +44,13 @@ Each topic has its own folder containing a README.md file with an explanation of
 ### Leetcode Problems
 The Leetcode folder contains solutions to some Leetcode problems in Go. Each problem has its own folder containing a README.md file with the problem description and solution.
 
-> Visit : https://leetcode.com/problemset/all/
+> Visit: https://leetcode.com/problemset/all/
 
 ### Exercism Problems
 The Exercism folder contains solutions to some Exercism problems in Go. Each problem has its own folder containing a README.md file with the problem description and solution.
 > Exercism Official Repo: https://github.com/exercism/go
 
-> Visit : https://exercism.org/tracks/go
+> Visit: https://exercism.org/tracks/go
 
 ## Contributing
 If you find an error in the code or documentation, or if you have a suggestion for a new topic, please feel free to open an issue or submit a pull request. Contributions are welcome and appreciated.
