@@ -14,6 +14,9 @@ func discountedPrice(product string, price float64) float64 {
 		discount = 0
 	}
 
+	discountedPrice := price * (1 - discount)
+	return discountedPrice
+
 }
 
 func main() {
