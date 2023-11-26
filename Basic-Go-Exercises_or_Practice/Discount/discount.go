@@ -11,6 +11,7 @@ func discountedPrice(product string, price float64) float64 {
 	case "bananas":
 		discount = 0.2
 	default:
+		discount = 0
 	}
 
 }
